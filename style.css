@@ -4,16 +4,181 @@
     box-sizing:border-box;
     font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
+    list-style-type:none;
+}
+.menuNavegacao{
+    position:absolute;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    
 }
 
-        /* RESPONSIVIDADE */
+h1{
+position:absolute;
+z-index:2;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+color:#fff;
+font: 5em sofia, san-serify ;
+text-shadow: 3px 5px 1px  black;
 
-/* Media query para dispositivos com largura máxima de 768px (tablets e celulares) */
-@media (max-width: 768px) {
-    body {font-size: 14px;}
+
 }
 
-/* Media query para dispositivos com largura máxima de 480px (celulares) */
-@media (max-width: 480px) {
-    body {font-size: 12px;}
+
+header nav{
+    position:absolute;
+    z-index:2;
+    display: flex;
+    justify-content:space-between    ;
+    margin-top: 2rem;
+    & li a{
+       margin:0 6rem;
+        color:#fff;
+        font-size: 1.5em;
+        text-decoration: none;
+        &:hover{
+            text-shadow: 0 0 5px white;
+        }
+    }
+    
 }
+
+.imgHeader{
+    position:absolute;
+    width:100%;
+    top:0;
+    
+
+}
+
+aside{
+
+    max-width:50%;
+    position:absolute;
+    z-index:2;
+    top:100%;
+    height:100%;
+    margin:1rem;
+    border:none;
+    border-radius:15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px 1px white;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+    & img{
+        width:60%;
+       
+    }
+}
+
+.display{
+    opacity:1;
+}
+
+.hidden{
+    opacity:0; 
+}
+
+
+main{
+
+    position:absolute;
+    top:100%;
+    width:100%;
+    & img{
+        width:100%;
+        margin:auto;
+       
+    }
+
+
+}
+hgroup{
+    width:80%;
+    margin: auto;
+    & img{
+        margin:1rem 7rem;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+hgroup h2{
+    color:#fff;
+    text-align:center;
+    margin-top:1rem;
+    font-size:3em;
+    text-transform:capitalize;
+
+}
+
+blockquote{
+    
+    font-size:1.2em;
+    line-height:1.4;
+    text-align: justify;
+    margin:auto;
+    color:#fff;
+    text-shadow: 0  0 8px black;
+}
+
+.asideRight{
+    position:absolute;
+    top:215%;
+    left:50%;
+    height:255%;
+    backdrop-filter: blur(20px);
+    border: #fff solid 1px;
+}
+
+.asideLeft{
+    top:472%;
+    height:165%;
+    padding:1rem 0;
+    
+}
+
+.asideEnd{
+    top:645%;
+    left:50%;
+    padding: 2rem 0;
+    & img{
+        width:400px
+    }
+}
+
+footer{
+    position:absolute;
+    top:755%;
+    z-index:2;
+    background:linear-gradient(180deg, #000 20% , #007 70%, #00f);
+    height:150px;
+    width: 100%;
+    
+
+    & h3, p{
+        color:#fff;
+        padding:1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
